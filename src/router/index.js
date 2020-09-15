@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import EventList from '../views/EventList.vue'
+import EventDetals from '../views/EventDetails.vue'
+import About from '../views/About.vue'
 
 const routes = [
   {
@@ -11,14 +13,12 @@ const routes = [
     path: '/event/:id',
     name: 'EventDetails',
     props: true,
-    component: () =>
-      import(/* webpackChunkName: "EventDetails" */ '@/views/EventDetails.vue')
+    component: EventDetals
   },
   {
     path: '/about',
     name: 'About',
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: About
   }
 ]
 
