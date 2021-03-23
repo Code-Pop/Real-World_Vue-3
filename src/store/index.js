@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import EventService from '@/services/EventService.js'
 
 export default createStore({
   state: {
@@ -15,15 +16,22 @@ export default createStore({
         {id:1, text:"...", done:true},
         {id:1, text:"...", done:false}
       ],
-      events: [
-        {id: 1, title:'...', organizer:'...'},
-        {id: 2, title:'...', organizer:'...'},
-        {id: 3, title:'...', organizer:'...'},
-        {id: 4, title:'...', organizer:'...'},
-      ]
+      events: [  ]
   },
-  mutations: {},
-  actions: {},
+  mutations: {
+    ADD_EVENT(state, event){
+      state.events.push(event)
+    },
+  },
+  actions: {
+    createEvent({commit}, event){
+       return EventService.postEvent(event).then(()=>{  // Acctually posts the event
+            commit('ADD_EVENT', event) // Then commits the created event locallu
+       }) 
+        // The commit above is not even necessary beacause we GET the events from the server
+        // So there is really NO NEED for us to manually put it in the store
+      }
+  },
   modules: {},
   getters: {
     categoryLen: state=> {
