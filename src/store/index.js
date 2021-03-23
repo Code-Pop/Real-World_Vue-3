@@ -16,20 +16,48 @@ export default createStore({
         {id:1, text:"...", done:true},
         {id:1, text:"...", done:false}
       ],
-      events: [  ]
+      events: [  ],
+      event: {}
   },
   mutations: {
     ADD_EVENT(state, event){
       state.events.push(event)
     },
+    SET_EVENTS(state, events){
+      state.events = events
+    },
+    SET_EVENT(state,event) {
+      state.event = event
+    }
   },
   actions: {
     createEvent({commit}, event){
-       return EventService.postEvent(event).then(()=>{  // Acctually posts the event
-            commit('ADD_EVENT', event) // Then commits the created event locallu
+       return EventService.postEvent(event).then(()=>{  
+            commit('ADD_EVENT', event) 
        }) 
-        // The commit above is not even necessary beacause we GET the events from the server
-        // So there is really NO NEED for us to manually put it in the store
+      },
+      fetchEvents({commit},{perPage,page}){ // commit=> context object
+        EventService.getEvents(perPage,page)
+        .then(response => {
+          commit('SET_EVENTS', response.data)
+        })
+        .catch(error => {
+          console.log('There was an error:', error.response)
+        })
+      },
+      fetchEvent({commit}, id){
+        let event = this.getters.getEventById(id)
+        if (event) {
+          commit('SET_EVENT', event)
+        } else  {
+          EventService.getEvent(id)
+          .then(response => {
+            commit('SET_EVENT',response.data)
+          })
+          .catch(error => {
+            console.log(error)
+          })
+      }
       }
   },
   modules: {},
@@ -48,7 +76,7 @@ export default createStore({
       return state.todos.length - getters.doneTodos.length
     },
     getEventById: (state) => (id) => {// Dynamic Getter example
-      return state.events.find(event=> event.id === id)
+      return state.events.find(event=> event.id == id)
     },
 
   } // Getters sometimes are better than accessing directly the propert

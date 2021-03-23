@@ -5,7 +5,8 @@
       <router-link :to="{ name: 'About' }">About</router-link> | 
       <router-link :to="{ name: 'EventCreate' }">Create Event</router-link>
     </div>
-    <router-view />
+    <router-view  :key="$route.fullPath"/> 
+    <!-- The key ensures the components get loaded when the URL changes-->
   </div>
 </template>
 
