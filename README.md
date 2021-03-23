@@ -1,5 +1,6 @@
-# real-world-vue
+# real-world-vue + VUEX
 
+This is code for the vuex vuemastery course, but it my adptation using vue3 with the base code from the real world vue3 corse.   
 ## Project setup
 ```
 npm install
@@ -10,6 +11,14 @@ npm install
 npm run serve
 ```
 
+#### Start Api
+
+For the API we are using !(json-server)[https://github.com/typicode/json-server]. So start it also
+with the commmand:
+
+```
+json-server --watch db.json
+```
 ### Compiles and minifies for production
 ```
 npm run build
