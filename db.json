@@ -29,6 +29,16 @@
       "date": "July 22, 2022",
       "time": "11:00",
       "organizer": "Carey Wales"
+    },
+    {
+      "id": 823,
+      "category": "community outreach",
+      "title": "Feed Indigent",
+      "description": "Assist us in feeding the indigent in the public nursing home.",
+      "location": "Bella Vista",
+      "date": "August 12, 2022",
+      "time": "12:00",
+      "organizer": "Johnny Karson"
     }
   ]
 }
