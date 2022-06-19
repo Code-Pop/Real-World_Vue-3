@@ -1,17 +1,25 @@
 # real-world-vue
 This repo is a fork of the [Vue Mastery course](https://www.vuemastery.com/courses/real-world-vue3), [Real World Vue 3 app](https://github.com/Code-Pop/Real-World_Vue-3).
 
-Below is an overview ..
+## A summary to all lessons
 
-1. Orientation
-2. Vue CLI - Creating the project
-3. Single File Components
-4. Vue Router Essentials
-5. API Calls with Axios
-6. Dynamic Routing
-7. Deploying with Render
-8. Scaling the App
+1. [Orientation](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/master)
+2. [Vue CLI - Creating the project](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L2)
+3. [Single File Components](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L3-start)
+4. [Vue Router Essentials](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L4-start)
+5. [API Calls with Axios](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L5-start)
+6. [Dynamic Routing](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L6-start)
+7. [Deploying with Render](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L7)
+8. [Scaling the App](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L8)
 
+## 1. Orientation
+In this Vue Mastery course, we’ll be building a production-level app using Vue 3. We’ll start off by creating the project using the Vue CLI. Then we’ll learn about single file .vue components and how they can be used to create a single page application. We’ll cover the fundamentals of Vue Router so we can navigate between the different views of our app, and we’ll even fetch real external data using API calls with Axios. We’ll end by learning about the build process and how to deploy our app into production.
+
+If you don’t know the fundamentals of Vue.js syntax, you’ll want to first take our Intro to Vue 3 course.
+
+If you’re ready to build a Real World Vue 3 app, I’ll see you in the rest of the course.
+
+[Next lesson >>](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L2)
 
 ## Project setup
 ```
