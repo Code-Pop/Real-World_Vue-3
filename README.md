@@ -9,7 +9,7 @@ This repo is a fork of the [Vue Mastery course](https://www.vuemastery.com/cours
 4. [Vue Router Essentials](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L4-start)
 5. [API Calls with Axios](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L5-start)
 6. [Dynamic Routing](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L6-start)
-7. [Deploying with Render](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L7)
+7. [Deploying with Firebase](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L7)
 8. [Scaling the App](https://github.com/RoelZ/Vue-Mastery-Vue-3/tree/L8)
 
 ## 1. Orientation
