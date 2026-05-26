@@ -1,0 +1,70 @@
+{
+    "events": [
+        {
+            "id": 123,
+            "category": "animal welfare",
+            "title": "Cat Adoption Day",
+            "description": "Find your new feline friend at this event.",
+            "location": "Meow Town",
+            "date": "January 28, 2022",
+            "time": "12:00",
+            "petsAllowed": true,
+            "organizer": "Kat Laydee"
+        },
+        {
+            "id": 456,
+            "category": "food",
+            "title": "Community Gardening",
+            "description": "Join us as we tend to the community edible plants.",
+            "location": "Flora City",
+            "date": "March 14, 2022",
+            "time": "10:00",
+            "petsAllowed": true,
+            "organizer": "Fern Pollin"
+        },
+        {
+            "id": 789,
+            "category": "sustainability",
+            "title": "Beach Cleanup",
+            "description": "Help pick up trash along the shore.",
+            "location": "Playa Del Carmen",
+            "date": "July 22, 2022",
+            "time": "11:00",
+            "petsAllowed": false,
+            "organizer": "Carey Wales"
+        },
+        {
+            "id": 1001,
+            "category": "animal welfare",
+            "title": "Dog Adoption Day",
+            "description": "Find your new canine friend at this event.",
+            "location": "Woof Town",
+            "date": "August 28, 2022",
+            "time": "12:00",
+            "petsAllowed": true,
+            "organizer": "Dawg Dahd"
+        },
+        {
+            "id": 1002,
+            "category": "food",
+            "title": "Canned Food Drive",
+            "description": "Bring your canned food to donate to those in need.",
+            "location": "Tin City",
+            "date": "September 14, 2022",
+            "time": "3:00",
+            "petsAllowed": true,
+            "organizer": "Kahn Opiner"
+        },
+        {
+            "id": 1003,
+            "category": "sustainability",
+            "title": "Highway Cleanup",
+            "description": "Help pick up trash along the highway.",
+            "location": "Highway 50",
+            "date": "July 22, 2022",
+            "time": "11:00",
+            "petsAllowed": false,
+            "organizer": "Brody Kill"
+        }
+    ]
+}

@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link :to="{ name: 'EventList' }">Events</router-link>
+      <router-link :to="{ name: 'About' }">About</router-link>
     </div>
+
     <router-view />
   </div>
 </template>
@@ -19,9 +20,12 @@
 
 #nav {
   padding: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 #nav a {
+  margin-left: 10px;
   font-weight: bold;
   color: #2c3e50;
 }
