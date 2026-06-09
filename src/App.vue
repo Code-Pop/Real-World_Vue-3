@@ -1,4 +1,5 @@
 <template>
+  <h1>Real World Vue-3</h1>
   <div id="app">
     <div id="nav">
       <router-link :to="{ name: 'EventList' }">Events</router-link> |
